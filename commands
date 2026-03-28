@@ -1,0 +1,10 @@
+step 1:
+npm create vite@latest
+
+step 2:
+npm install 
+
+step 3:
+npm i bootstrap@5.3.8   -> for bootstrap
+
+npm run dev
