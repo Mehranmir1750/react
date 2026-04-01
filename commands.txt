@@ -8,3 +8,10 @@ step 3:
 npm i bootstrap@5.3.8   -> for bootstrap
 
 npm run dev
+
+
+//push to git 
+
+git add .
+git commit -m "Added BMI calculator"
+git push

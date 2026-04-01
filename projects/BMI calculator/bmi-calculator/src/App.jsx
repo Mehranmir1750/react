@@ -53,7 +53,7 @@ function App(){
         </div>
         
         <div>
-          <label>Height</label>
+          <label>Height(inches)</label>
           <input type="text" placeholder="Please enter your height" value={height} onChange={(e) => setHeight(e.target.value)}></input>
         </div>
 
