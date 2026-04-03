@@ -1,0 +1,66 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+}
+
+/* Main container */
+.app {
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* Card */
+.weather-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.weather-card h1 {
+  margin-bottom: 20px;
+}
+
+/* Input */
+.weather-card input {
+  padding: 10px;
+  width: 70%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Button */
+.weather-card button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.weather-card button:hover {
+  background-color: #45a049;
+}
+
+/* Weather result */
+.result {
+  margin-top: 20px;
+}
+
+.result h2 {
+  margin: 10px 0;
+}
+
+.result h3 {
+  margin: 5px 0;
+  font-size: 28px;
+}
