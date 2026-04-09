@@ -15,7 +15,7 @@ function App() {
     if(Counter>0){
       setCounter(Counter-1)
       console.log("-",Counter)
-    }
+    } 
   }
 
   return (
