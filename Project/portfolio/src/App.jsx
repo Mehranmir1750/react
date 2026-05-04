@@ -1,5 +1,12 @@
 import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
 
-export default function navbar(){
-  return <Navbar></Navbar>
+export default function App(){
+  return (
+    <>
+  <Navbar></Navbar>
+  <Hero></Hero>
+  </>
+
+  );
 }
