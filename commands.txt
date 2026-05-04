@@ -15,3 +15,30 @@ npm run dev
 git add .
 git commit -m "Added BMI calculator"
 git push
+
+Add a single file
+    
+    git add filename
+
+
+Add file from folder
+
+    git add folder/file.js
+
+Add multiple specific files
+
+    git add file1.js file2.js
+
+Add all files in a folder
+
+    git add foldername/
+
+tailwind 
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+//for node.js backend
+
+npm init -y
