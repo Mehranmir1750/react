@@ -1,4 +1,5 @@
 import "../styles/Hero.css"
+import profile from "../assets/profile.png"
 
 export default function Hero(){
     return(
@@ -16,8 +17,9 @@ export default function Hero(){
                 </div>
             </div>
 
-            <div className="her-right">
-                <div className="hero-box"></div>
+            <div className="hero-right">
+                <img className="hero-img" src={profile} alt="profile"></img>
+               
             </div>
         </section>
     );
