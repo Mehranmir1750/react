@@ -1,0 +1,41 @@
+.card{
+
+    background-color:  #f1f5f9;
+    max-width: 280px;
+    /* height: 250px; */
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.3s
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card p{
+    margin: 10px 0 15px;
+    color: #475569;
+}
+
+.card-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-git,
+.btn-live{
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-git{
+    background: #0f172a;
+    color: white;
+}
+
+.btn-live{
+    border:1px solid #3b82f6;
+    color: #3b82f6;
+}
