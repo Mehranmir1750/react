@@ -1,0 +1,31 @@
+.body-result{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    
+}
+
+.heading{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.score{
+    color:yellow
+}
+
+.explain{
+    color: green;
+
+}
+
+.ai-explain{
+    color:powderblue;
+    font-size: 20px;
+    padding: 10px;
+
+
+}
