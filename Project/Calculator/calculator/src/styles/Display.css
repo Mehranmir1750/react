@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+     box-shadow: 0px 0px 25px rgba(255,255,255,0.1);
    
 }
 
@@ -65,4 +65,32 @@
 .button-container button{
     width:70px;
     height: 60px;
+}
+
+.number:hover{
+    background-color: white;
+    transition: 0.3s;
+    transform: translateY(5px);
+    cursor: pointer;
+}
+
+.operator:hover{
+    background-color: yellowgreen;
+    transition: 0.3s;
+    transform: translateY(5px);
+    cursor: pointer;
+}
+
+.del:hover{
+    background-color: red;
+    transition: 0.3s;
+    transform: translateY(5px);
+    cursor: pointer;
+}
+
+.clear:hover{
+    background-color:springgreen;
+    transition: 0.3s;
+    transform: translateY(5px);
+    cursor: pointer;
 }
