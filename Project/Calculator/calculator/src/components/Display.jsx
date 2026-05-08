@@ -6,12 +6,18 @@ export default function Display(){
     const [start, setStart] = useState("0")
      const [firstNumber, setFirstNumber] = useState(null);
   const [operator, setOperator] = useState("");
+  const [expression, setExpression] = useState("");
 
     function handleOperation(operant){
 
         setFirstNumber(Number(start));
         setOperator(operant);
-         setStart("0");
+        setExpression(start + operant);
+        setStart("0");
+
+        if(operant == "+"){
+            setStart(start+"+"+setFirstNumber)
+        }
         
     }
 
@@ -21,6 +27,7 @@ export default function Display(){
 
     if(operator === '+'){
         setStart(String(firstNumber + secondnumber));
+       
     }
 
     if(operator === '-'){
@@ -35,6 +42,10 @@ export default function Display(){
         setStart(String(firstNumber / secondnumber));
     }
 
+    if(operator === '%'){
+    setStart(String(firstNumber % secondnumber));
+}
+
 }
     return (
     <>
@@ -48,7 +59,7 @@ export default function Display(){
     <div className="button-container">
        
        
-        <button className="operator">%</button> 
+        <button className="operator" onClick={()=> handleOperation("%")}>%</button> 
         <button className="operator" onClick={()=> handleOperation("*")}>x</button>
         <button className="operator" onClick={()=> handleOperation("/")}>÷</button>
        
@@ -65,9 +76,16 @@ export default function Display(){
         <button className="number" onClick={()=>setStart(start === "0" ? "3" : start + "3")}>3</button>
         <button className="number" onClick={()=>setStart(start === "0" ? "2" : start + "2")}>2</button>
         <button className="number" onClick={()=>setStart(start === "0" ? "1" : start +"1")}>1</button>
-        <button className="operator">.</button>
-        <button className="number">0</button>
-        <button className="number">00</button>
+        <button className="operator" 
+        onClick={() => {
+
+   if(!start.includes(".")){
+      setStart(start === "0" ? "0." : start + ".");
+   }
+
+}}>.</button>
+        <button className="number" onClick={()=> setStart(start === "0" ? "0": start + "0")}>0</button>
+        <button className="number" onClick={()=> setStart(start === "0" ? "0": start + "00")}>00</button>
         <button className="clear" onClick={()=> setStart("0")}>clear</button>
         <button className="operator" onClick={handleEqual}>=</button>
        
