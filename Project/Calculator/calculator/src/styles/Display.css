@@ -10,6 +10,8 @@
     justify-content: center;
     align-items: center;
      box-shadow: 0px 0px 25px rgba(255,255,255,0.1);
+    margin-bottom: 100px;
+    margin-top: -30px;
    
 }
 
@@ -24,6 +26,7 @@
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     background-color: #dee4e7;
+    margin-top: -190px;
 }
 
 
@@ -38,9 +41,12 @@
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     border: 30px solid #dee4e7;
+    margin-top: 60px;
+
+    
 }
 .display-value{
-    background-color: aliceblue
+    background-color: aliceblue;
     
 }
 

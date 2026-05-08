@@ -1,15 +1,13 @@
-
-import Display from "./components/Display"
-
+import Calculator from "./components/Calculator";
 
 function App() {
-  
 
   return (
     <>
-      <Display></Display>
+      <Calculator />
     </>
   )
+
 }
 
-export default App
+export default App;
